@@ -26,10 +26,18 @@ function gridSize(){
             }
 
             const drawDiv = document.querySelectorAll("div.draw");
-
+            let lightness = 90;
             drawDiv.forEach((div) => {
                 div.addEventListener("mouseover", () => {
-                    div.style.backgroundColor = "pink";
+                    let hue = Math.floor(Math.random()*360);
+                    let saturation = Math.floor(Math.random()*100);
+                    
+                    div.style.backgroundColor = 'hsl(' + hue + ',' + saturation + '%,' + lightness + '%)';
+                    lightness -= 10;
+                    // let blue = Math.floor(Math.random()*255);
+                    // let green = Math.floor(Math.random()*255);
+                    // let red = Math.floor(Math.random()*255);
+                    // div.style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
                 });
             });
         }
@@ -52,10 +60,13 @@ for (let i=1; i<=5; i++){
 }
 
 const drawDiv = document.querySelectorAll("div.draw");
-
+let lightness = 90;
 drawDiv.forEach((div) => {
     div.addEventListener("mouseover", () => {
-        div.style.backgroundColor = "pink";
+        let hue = Math.floor(Math.random()*360);
+        let saturation = Math.floor(Math.random()*100);
+        div.style.backgroundColor = 'hsl(' + hue + ',' + saturation + '%,' + lightness + '%)';
+        lightness -= 10;
     });
 });
 
