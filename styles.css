@@ -1,9 +1,27 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .draw{
-    border: 3px black solid;
-    min-width: 200px;
-    min-height: 200px;
+    border: 1px gray solid;
+    background-color: white;
+    display: flex;
+    flex-grow: 1;
 }
 
 .container{
     display:flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.gridContainer{
+    width: 700px;
+    height: 700px;
+    display: flex;
 }
