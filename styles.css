@@ -1,0 +1,9 @@
+.draw{
+    border: 3px black solid;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.container{
+    display:flex;
+}
